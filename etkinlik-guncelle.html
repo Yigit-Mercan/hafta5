@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlik Güncelle</title>
+    <link rel="stylesheet" href="css/2416501053.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>Etkinlik Güncelle</h1>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="etkinlikler.html">Etkinlikler</a>
+            <a href="etkinlik-ekle.html">Ekle</a>
+        </nav>
+    </header>
+
+    <main>
+        <main>
+        <!-- data-mode="guncelle" sayesinde JS bu sayfanın güncelleme sayfası olduğunu anlayacak -->
+        <form id="etkinlik-formu" data-mode="guncelle" novalidate>
+            <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #555;">Alanlar mevcut etkinliğin bilgileriyle dolu gelir. Bu sprintte form veri güncellemez.</p>
+
+            <div class="form-group">
+                <label for="etkinlik-adi">Etkinlik Adı *</label>
+                <input type="text" id="etkinlik-adi" name="etkinlik-adi">
+                <span class="hata-metni" id="etkinlik-adi-hata"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="kategori">Kategori *</label>
+                <select id="kategori" name="kategori">
+                    <option value="">Seçiniz...</option>
+                    <option value="Seminer">Seminer</option>
+                    <option value="Atölye">Atölye</option>
+                    <option value="Söyleşi">Söyleşi</option>
+                </select>
+                <span class="hata-metni" id="kategori-hata"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="tarih">Tarih *</label>
+                <input type="date" id="tarih" name="tarih">
+                <span class="hata-metni" id="tarih-hata"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="saat">Saat *</label>
+                <input type="time" id="saat" name="saat">
+                <span class="hata-metni" id="saat-hata"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="yer">Yer *</label>
+                <input type="text" id="yer" name="yer">
+                <span class="hata-metni" id="yer-hata"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="kontenjan">Kontenjan</label>
+                <input type="number" id="kontenjan" name="kontenjan">
+                <span class="hata-metni" id="kontenjan-hata"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="aciklama">Açıklama</label>
+                <textarea id="aciklama" name="aciklama" rows="4"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Güncelle</button>
+            </div>
+
+            <div id="form-mesaj" style="margin-top: 1rem;"></div>
+        </form>
+    </main>
+    </main>
+
+    <footer>
+        <p>yiğit mercan · 2416501053 · 2026</p>
+    </footer>
+<script type="module" src="js/event-form.js"></script>
+</body>
+</html>
