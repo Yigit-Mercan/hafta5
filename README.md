@@ -1,1 +1,1 @@
-//hafta5.vercel.app
+hafta5.vercel.app
